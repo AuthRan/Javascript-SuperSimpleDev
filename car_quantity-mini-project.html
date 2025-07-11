@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quantity</title>
+    <style>
+        .buttons button:hover{
+            cursor: pointer;
+            background-color: lightgrey;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body bgcolor="lightgreen">
+    <div class="buttons" style="
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+        ">
+        <button onclick="
+            console.log(`Car Quantity: ${quantity}`);
+        ">
+            Cart Quantity
+        </button>
+        <button onclick="
+            quantity++;
+        ">
+            Add to cart
+        </button>
+        <button onclick="
+            quantity+=2;
+            // console.log(`Car Quantity: ${quantity}`);
+        ">
+            +2
+        </button>
+        <button onclick="
+            quantity = 0;
+        ">
+            Reset Cart
+        </button>
+    </div>
+    <script>
+        let quantity = 0;
+    </script>
+</body>
+</html>
