@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game-RPS</title>
+</head>
+<body>
+  <p>This is a Rock Paper Scissor Game!</p>
+  <div class="Game">
+
+    <!-- Rock -->
+    <button onclick="(function(){
+      let yourChoice = 'Rock';
+      let computerChoice = Math.random();
+      let computerValue;
+      let result = 0;
+
+      if (computerChoice <= 1/3) {
+        computerValue = 'Rock';
+      } else if (computerChoice < 2/3) {
+        computerValue = 'Paper';
+      } else {
+        computerValue = 'Scissor';
+      }
+
+      if (computerValue === 'Rock') {
+        result = 'Draw';
+      } else if (computerValue === 'Paper') {
+        result = 'You lost!';
+      } else {
+        result = 'You won!';
+      }
+
+      alert(`Your choice: ${yourChoice}\nComputer choice: ${computerValue}\nFinal result: ${result}`);
+    })();">Rock</button>
+
+    <!-- Paper -->
+    <button onclick="(function(){
+      let yourChoice = 'Paper';
+      let computerChoice = Math.random();
+      let computerValue;
+      let result = 0;
+
+      if (computerChoice <= 1/3) {
+        computerValue = 'Rock';
+      } else if (computerChoice < 2/3) {
+        computerValue = 'Paper';
+      } else {
+        computerValue = 'Scissor';
+      }
+
+      if (computerValue === 'Rock') {
+        result = 'You won!';
+      } else if (computerValue === 'Paper') {
+        result = 'Draw';
+      } else {
+        result = 'You lost!';
+      }
+
+      alert(`Your choice: ${yourChoice}\nComputer choice: ${computerValue}\nFinal result: ${result}`);
+    })();">Paper</button>
+
+    <!-- Scissor -->
+    <button onclick="(function(){
+      let yourChoice = 'Scissor';
+      let computerChoice = Math.random();
+      let computerValue;
+      let result = 0;
+
+      if (computerChoice <= 1/3) {
+        computerValue = 'Rock';
+      } else if (computerChoice < 2/3) {
+        computerValue = 'Paper';
+      } else {
+        computerValue = 'Scissor';
+      }
+
+      if (computerValue === 'Rock') {
+        result = 'You lost!';
+      } else if (computerValue === 'Paper') {
+        result = 'You won!';
+      } else {
+        result = 'Draw';
+      }
+
+      alert(`Your choice: ${yourChoice}\nComputer choice: ${computerValue}\nFinal result: ${result}`);
+    })();">Scissor</button>
+
+  </div>
+</body>
+</html>
+
+
+
+<!-- My code issue with block and stuff -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-RPS</title>
+</head>
+<body>
+    <p>This is a Rock Paper Scissor Game!</p>
+    <div class="Game">
+        <button onclick="
+                let yourChoice = 'Rock';
+                let computerChoice = Math.random();
+                let computerValue;
+                let result=0;
+                if(computerChoice >= 0 && computerChoice <= (1/3) ){
+                    computerValue = 'Rock'
+                }
+                else if(computerChoice > (1/3) && computerChoice < (2/3)){
+                    computerValue = 'Paper'
+                }
+                else if(computerChoice >= (2/3) && computerChoice < (1)){
+                    computerValue = 'Scissor'
+                }
+                if(computerValue === 'Rock'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: Draw`);
+                }
+                else if(computerValue === 'Paper'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You lost!`);
+                }
+                else if(computerValue === 'Scissor'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You won!`);
+                }
+            ">
+            Rock
+        </button>
+        <button onclick="
+                yourChoice = 'Paper';
+                computerChoice = Math.random();
+                computerValue;
+                result=0;
+                if(computerChoice >= 0 && computerChoice <= (1/3)){
+                    computerValue = 'Rock'
+                }
+                else if(computerChoice > (1/3) && computerChoice < (2/3)){
+                    computerValue = 'Paper'
+                }
+                else if(computerChoice >= (2/3) && computerChoice < (1)){
+                    computerValue = 'Scissor'
+                }
+                if(computerValue === 'Rock'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You won!`);
+                }
+                else if(computerValue === 'Paper'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: Draw`);
+                }
+                else if(computerValue === 'Scissor'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You lost!`);
+                }
+            ">
+            Paper
+        </button>
+        <button onclick="
+                yourChoice = 'Scissor';
+                computerChoice = Math.random();
+                computerValue;
+                result=0;
+                if(computerChoice >= 0 && computerChoice <= (1/3)){
+                    computerValue = 'Rock'
+                }
+                else if(computerChoice > (1/3) && computerChoice < (2/3)){
+                    computerValue = 'Paper'
+                }
+                else if(computerChoice >= (2/3) && computerChoice < (1)){
+                    computerValue = 'Scissor'
+                }
+                if(computerValue === 'Rock'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You lost!`);
+                }
+                else if(computerValue === 'Paper'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: You won!`);
+                }
+                else if(computerValue === 'Scissor'){
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerValue} \n Final result: Draw`);
+                }
+            ">
+            Scissor
+        </button>
+    </div>
+    <script>
+        // const yourChoice = 0;
+        // const computerChoice = 0;
+        // let computerValue;
+        // const result =0;
+    </script>
+</body>
+</html> -->
