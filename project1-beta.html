@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 : Beta</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            YouTube Subscribe Button
+        </p>
+        <button style="
+            background-color: red;
+            color: white;
+        " onclick="
+            const elementButton = document.querySelector('button').innerHTML;
+            if(elementButton === 'Subscribe')
+                document.querySelector('button').innerHTML = 'Subscribed';
+            else    
+                document.querySelector('button').innerHTML = 'Subscribe';
+        ">
+            Subscribe
+        </button>
+    </div>
+    <script>
+         
+    </script>
+</body>         
+</html>
