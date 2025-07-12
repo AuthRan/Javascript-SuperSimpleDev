@@ -36,11 +36,11 @@
         <p>Orders over $40 = Free Shipping</p>
         <input type="text" class="searchBar" placeholder="Enter your Price of item...">
         <button class="elementCalc" onclick="
-            value = document.querySelector('.elementCalc').innerHTML;
-            kitnaPaisa(value);
+            kitnaPaisa();
         ">
             Calculate
         </button>
+        <p class="finalPayment"></p>
     </div>
     <script>
         function SubscribeButton(){
@@ -49,6 +49,16 @@
                  document.querySelector('button').innerHTML = 'Subscribed';
              else    
                  document.querySelector('button').innerHTML = 'Subscribe';
+         }
+         function kitnaPaisa(){
+            value = document.querySelector('.searchBar').value;
+            console.log(value);
+            let payment = 0;
+            if(value <= 40)
+                payment = Number(value) + 10;
+            else    
+                payment = value;
+            document.querySelector('.finalPayment').innerHTML = `Pay : $${payment}`;
          }
     </script>
 </body>         
