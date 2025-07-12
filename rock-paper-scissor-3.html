@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-RPS</title>
+</head>
+<body>
+    <p>This is a Rock Paper Scissor Game!</p>
+    <div class="Game">
+        <button onclick="
+                startGame('Rock');
+            ">
+            Rock
+        </button>
+        <button onclick="
+                startGame('Paper');
+            ">
+            Paper
+        </button>
+        <button onclick="
+                startGame('Scissor');
+            ">
+            Scissor
+        </button>
+        <button onclick="
+            scoreCard.wins = 0;
+            scoreCard.losses = 0;
+            scoreCard.ties = 0;
+        ">
+            Reset
+        </button>
+    </div>
+    <script>
+        let scoreCard = {
+            wins : 0,
+            losses : 0,
+            ties : 0
+        };
+        function startGame(yourChoice){
+            let computerValue = Math.random();
+            let result =0;
+            let computerChoice = undefined;
+            if(computerValue >= 0 && computerValue <= (1/3)){
+                    computerChoice = 'Rock'
+            }
+            else if(computerValue > (1/3) && computerValue < (2/3)){
+                computerChoice = 'Paper'
+            }
+            else if(computerValue >= (2/3) && computerValue < (1)){
+                computerChoice = 'Scissor'
+            }
+            if(yourChoice === 'Rock'){
+                if(computerChoice === 'Rock'){
+                    scoreCard.ties ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Paper'){
+                    scoreCard.losses ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Scissor'){
+                    scoreCard.wins ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+            }
+            else if(yourChoice === 'Paper'){
+                // console.log(computer);  found the mistake
+                if(computerChoice === 'Rock'){
+                    scoreCard.wins ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Paper'){
+                    scoreCard.ties ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Scissor'){
+                    scoreCard.losses ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }                
+            }
+            else {
+                if(computerChoice === 'Rock'){
+                    scoreCard.losses ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Paper'){
+                    scoreCard.wins ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+                else if(computerChoice === 'Scissor'){
+                    scoreCard.ties ++;
+                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
