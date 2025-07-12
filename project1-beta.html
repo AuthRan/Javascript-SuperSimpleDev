@@ -27,6 +27,21 @@
         <p>Rock Paper Scissor</p>
         <a href="rock-paper-scissor-4.html" target="_blank">Click here</a>
     </div>
+    <div>
+        <br><br>
+        <p style="
+            font-weight: bold;
+        ">Amazon Shipping Calculater</p>
+        <p>Orders under $40 = +$10 Shipping</p>
+        <p>Orders over $40 = Free Shipping</p>
+        <input type="text" class="searchBar" placeholder="Enter your Price of item...">
+        <button class="elementCalc" onclick="
+            value = document.querySelector('.elementCalc').innerHTML;
+            kitnaPaisa(value);
+        ">
+            Calculate
+        </button>
+    </div>
     <script>
         function SubscribeButton(){
              const elementButton = document.querySelector('button').innerHTML;

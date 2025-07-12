@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    DOM
+    <input type="text" id="myInput">
+    <button onclick="logInput()">Log Input</button>
+
+    <script>
+    function logInput() {
+        const val = document.getElementById('myInput').value;
+        console.log(val);
+    }
+    </script>
+
 </body>
+
 </html>
