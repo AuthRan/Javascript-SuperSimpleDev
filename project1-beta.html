@@ -17,17 +17,24 @@
             background-color: red;
             color: white;
         " onclick="
-            const elementButton = document.querySelector('button').innerHTML;
-            if(elementButton === 'Subscribe')
-                document.querySelector('button').innerHTML = 'Subscribed';
-            else    
-                document.querySelector('button').innerHTML = 'Subscribe';
+            SubscribeButton();
         ">
             Subscribe
         </button>
     </div>
+    <div>
+        <br><br>
+        <p>Rock Paper Scissor</p>
+        <a href="rock-paper-scissor-4.html" target="_blank">Click here</a>
+    </div>
     <script>
-         
+        function SubscribeButton(){
+             const elementButton = document.querySelector('button').innerHTML;
+             if(elementButton === 'Subscribe')
+                 document.querySelector('button').innerHTML = 'Subscribed';
+             else    
+                 document.querySelector('button').innerHTML = 'Subscribe';
+         }
     </script>
 </body>         
 </html>
