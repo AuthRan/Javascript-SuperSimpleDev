@@ -34,6 +34,11 @@
     </div>
 
     <div>
+        <p class="result"></p>
+        <p class="choices"></p>
+    </div>
+
+    <div>
         <p class="resultElement"></p>
     </div>
     <script>
@@ -59,50 +64,66 @@
             if(yourChoice === 'Rock'){
                 if(computerChoice === 'Rock'){
                     scoreCard.ties ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('Draw!');
                 }
                 else if(computerChoice === 'Paper'){
                     scoreCard.losses ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You lost!');
                 }
                 else if(computerChoice === 'Scissor'){
                     scoreCard.wins ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You won!');
                 }
             }
             else if(yourChoice === 'Paper'){
                 // console.log(computer);  found the mistake
                 if(computerChoice === 'Rock'){
                     scoreCard.wins ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You won!');
                 }
                 else if(computerChoice === 'Paper'){
                     scoreCard.ties ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('Draw!');
                 }
                 else if(computerChoice === 'Scissor'){
                     scoreCard.losses ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You lost!');
                 }                
             }
             else {
                 if(computerChoice === 'Rock'){
                     scoreCard.losses ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You lost! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You lost!');
                 }
                 else if(computerChoice === 'Paper'){
                     scoreCard.wins ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: You won! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('You won!');
                 }
                 else if(computerChoice === 'Scissor'){
                     scoreCard.ties ++;
-                    alert(`Your choice: ${yourChoice} \n Computer choice: ${computerChoice} \n Final result: Draw! \n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`);
+                    displayChoices(yourChoice, computerChoice);
+                    displayFinalResult('Draw!');
+
                 }
             }
             displayResult();
         }
         function displayResult(){
             document.querySelector('.resultElement').innerHTML = `\n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`
+        }
+        function displayFinalResult(result){
+            document.querySelector('.result').innerHTML = `${result}`;
+        }
+        function displayChoices(yourChoice, computerChoice){
+            document.querySelector('.choices').innerHTML = `Your choice: ${yourChoice} <br> Computer choice: ${computerChoice}`;
         }
     </script>
 </body>
