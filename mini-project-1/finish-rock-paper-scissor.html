@@ -14,40 +14,68 @@
             font-size: 30px;
             font-weight: bold;
         }
+        .image{
+            height: 50px;
+        }
+        .button{
+            background-color: transparent;
+            border: 3px solid white;
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .reset{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .resultwa{
+            font-size: large;
+            font-weight: bolder;
+        }
+        .result{
+            height: 25px;
+        }
     </style>
 </head>
 <body>
     <p class="title">This is a Rock Paper Scissor Game!</p>
     <div class="Game">
-        <button onclick="
+        <button class="button" onclick="
                 startGame('Rock');
             ">
-            Rock
+            <img src="icons/rock-emoji.png" alt="" class="image">
         </button>
-        <button onclick="
+        <button class="button" onclick="
                 startGame('Paper');
             ">
-            Paper
+            <img src="icons/paper-emoji.png" alt="" class="image">
         </button>
-        <button onclick="
-                startGame('Scissor');
+        <button class="button" onclick="
+                startGame('Scissors');
             ">
-            Scissor
+            <img src="icons/scissors-emoji.png" alt="" class="image">
         </button>
+        <br><br>
+        <p class="resultwa"></p>
+            <div>
+                <!-- <p class="result"></p> -->
+                <p class="choices">
+                    
+                </p>
+            </div>
         <button onclick="
             scoreCard.wins = 0;
             scoreCard.losses = 0;
             scoreCard.ties = 0;
             displayResult();
-        ">
+        " class="reset">
             Reset
         </button>
     </div>
 
-    <div>
-        <p class="result"></p>
-        <p class="choices"></p>
-    </div>
 
     <div>
         <p class="resultElement"></p>
@@ -70,7 +98,7 @@
                 computerChoice = 'Paper'
             }
             else if(computerValue >= (2/3) && computerValue < (1)){
-                computerChoice = 'Scissor'
+                computerChoice = 'Scissors'
             }
             if(yourChoice === 'Rock'){
                 if(computerChoice === 'Rock'){
@@ -83,7 +111,7 @@
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('You lost!');
                 }
-                else if(computerChoice === 'Scissor'){
+                else if(computerChoice === 'Scissors'){
                     scoreCard.wins ++;
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('You won!');
@@ -101,7 +129,7 @@
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('Draw!');
                 }
-                else if(computerChoice === 'Scissor'){
+                else if(computerChoice === 'Scissors'){
                     scoreCard.losses ++;
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('You lost!');
@@ -118,7 +146,7 @@
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('You won!');
                 }
-                else if(computerChoice === 'Scissor'){
+                else if(computerChoice === 'Scissors'){
                     scoreCard.ties ++;
                     displayChoices(yourChoice, computerChoice);
                     displayFinalResult('Draw!');
@@ -131,10 +159,13 @@
             document.querySelector('.resultElement').innerHTML = `\n Wins: ${scoreCard.wins}, Losses: ${scoreCard.losses}, Ties: ${scoreCard.ties}`
         }
         function displayFinalResult(result){
-            document.querySelector('.result').innerHTML = `${result}`;
+            // document.querySelector('.result').innerHTML = `${result}`;
+            document.querySelector('.resultwa').innerHTML = `${result}`;
+
         }
         function displayChoices(yourChoice, computerChoice){
-            document.querySelector('.choices').innerHTML = `Your choice: ${yourChoice} <br> Computer choice: ${computerChoice}`;
+            document.querySelector('.choices').innerHTML = `Your choice: <img src="icons/${yourChoice}-emoji.png" alt="" class="result"> <br><br> Computer choice: 
+                    <img src="icons/${computerChoice}-emoji.png" alt="" class="result">`;
         }
     </script>
 </body>
