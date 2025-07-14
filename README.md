@@ -41,4 +41,6 @@ js-supersimpledev/
 
 ```
 # Screenshots :
+
 <img width="334" height="128" alt="Screenshot 2025-07-14 151531" src="https://github.com/user-attachments/assets/8882aa4a-8c58-463e-8ad4-f83340096e5d" />
+<div><img width="401" height="557" alt="Screenshot 2025-07-14 152045" src="https://github.com/user-attachments/assets/97e5269c-7926-4f06-9ad5-7093abe03d27" /></div>
