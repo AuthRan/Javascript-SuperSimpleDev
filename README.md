@@ -1,2 +1,44 @@
 # Javascript-SuperSimpleDev
 I am using this repo to push all my code i made while learning Javascript From SuperSimpleDev Youtube Channel
+
+# 🧠 Learning JavaScript with SuperSimpleDev
+
+Welcome to my journey of learning JavaScript through [SuperSimpleDev's](https://www.supersimple.dev/) tutorials!
+
+This repository contains my notes, code exercises, and projects as I work through the course step-by-step.
+
+---
+
+## 📚 Course Source
+
+I'm following:
+> [SuperSimpleDev's JavaScript Tutorial for Beginners](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit)
+
+---
+
+## 🧰 What you'll find in this repo:
+
+- ✅ **JavaScript Basics**
+  - Variables, Data Types, Operators
+  - Conditionals & Loops
+  - Functions & Scope
+- ✅ **DOM Manipulation**
+- ✅ **Events & Interactivity**
+- ✅ **Mini Projects**
+- 🧪 **Practice Exercises**
+
+---
+
+## 🗂️ Folder Structure
+
+```bash
+js-supersimpledev/
+├── 01-basics/
+├── 02-dom/
+├── 03-events/
+├── 04-mini-projects/
+└── README.md
+
+```
+# Screenshots :
+<img width="334" height="128" alt="Screenshot 2025-07-14 151531" src="https://github.com/user-attachments/assets/8882aa4a-8c58-463e-8ad4-f83340096e5d" />
