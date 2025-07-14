@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Practice</title>
+    <style>
+        .button {
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .search {
+            padding: 10px 15px;
+        }
+
+        .search::placeholder {
+            font-size: larger;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" placeholder="Todo name" class="search">
+    <button class="button" onclick="
+        showKardo();
+    ">
+        Add
+    </button>
+    <script>
+        function showKardo(){
+        let myArray = [];
+        let element = document.querySelector('.search').value;
+        myArray.push(element);
+        console.log(myArray);
+        }
+    </script>
+</body>
+</html>
