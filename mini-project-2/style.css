@@ -1,0 +1,40 @@
+.add , .delete-button-js {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+
+.delete-button-js{
+    background-color: darkred;
+}
+
+.search , .date {
+    padding: 10px 15px;
+}
+
+.search::placeholder {
+    font-size: larger;
+    font-size: larger;
+}
+
+.shower {
+    font-family: monospace;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 200px 300px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    align-items : center;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 200px 300px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
