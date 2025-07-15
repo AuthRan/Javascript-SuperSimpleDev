@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-RPS-Asynchronous</title>
+    <link rel="stylesheet" href="rps-async.css">
+</head>
+
+<body>
+    <p class="title">This is a Rock Paper Scissor Game!</p>
+    <div class="Game">
+        <button class="button" onclick="
+                startGame('Rock');
+            ">
+            <img src="icons/rock-emoji.png" alt="" class="image">
+        </button>
+        <button class="button" onclick="
+                startGame('Paper');
+            ">
+            <img src="icons/paper-emoji.png" alt="" class="image">
+        </button>
+        <button class="button" onclick="
+                startGame('Scissors');
+            ">
+            <img src="icons/scissors-emoji.png" alt="" class="image">
+        </button>
+        <br><br>
+        <p class="resultwa"></p>
+        <div>
+            <!-- <p class="result"></p> -->
+            <p class="choices"></p>
+        </div>
+        <button onclick="
+            scoreCard.wins = 0;
+            scoreCard.losses = 0;
+            scoreCard.ties = 0;
+            displayResult();
+        " class="reset">
+            Reset
+        </button>
+        <button class="autoplay" onclick="khudse();">
+            Auto
+        </button>
+    </div>
+    <div>
+        <p class="resultElement"></p>
+    </div>
+    <script src="rps-async.js"></script>
+</body>
+
+</html>
