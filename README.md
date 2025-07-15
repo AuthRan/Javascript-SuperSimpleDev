@@ -46,5 +46,6 @@ js-supersimpledev/
 <div><img width="401" height="557" alt="Screenshot 2025-07-14 152045" src="https://github.com/user-attachments/assets/97e5269c-7926-4f06-9ad5-7093abe03d27" /></div>
 <img width="352" height="443" alt="image" src="https://github.com/user-attachments/assets/0dc6992b-52af-4dc4-abbd-7e2206682acf" />
 <img width="677" height="581" alt="image" src="https://github.com/user-attachments/assets/c72e033e-21bb-4ae3-b099-5da1235e6a8d" />
+<img width="913" height="409" alt="Screenshot 2025-07-15 124536" src="https://github.com/user-attachments/assets/44f964c8-6731-4cd5-ba4a-8663b6445cc6" />
 
 
