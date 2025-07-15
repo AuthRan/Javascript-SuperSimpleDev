@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,13 +29,23 @@
     ">
         Add
     </button>
+    <div class="Dikhao"></div>
     <script>
-        function showKardo(){
         let myArray = [];
-        let element = document.querySelector('.search').value;
-        myArray.push(element);
-        console.log(myArray);
+        function showKardo() {
+            let element = document.querySelector('.search').value;
+            myArray.push(element);
+            console.log(myArray);
+            document.querySelector('.search').value = '';
+            let printer = '';
+            for (let i = 0; i < myArray.length; i++) {
+                let ele = myArray[i];
+                let htmls = `<p>${ele}</p>`;
+                printer += htmls;
+            }
+            document.querySelector('.Dikhao').innerHTML = printer;
         }
     </script>
 </body>
+
 </html>
