@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv 1</title>
+</head>
+<body>
+    <button class="hey">Click me</button>
+
+    <script>
+        document.querySelector('.hey').addEventListener('click', () => {
+            greeting();
+            greeting2();
+        });
+        document.body.addEventListener('keydown', (event)=>{
+            console.log(event.key);
+            if(event.key === 'Enter'){
+                greeting();
+            }
+        })  
+
+        function greeting(){
+            console.log("hey");
+        }
+
+        function greeting2(){
+            console.log("Hey from greeting 2");
+        }
+    </script>
+</body>
+</html>

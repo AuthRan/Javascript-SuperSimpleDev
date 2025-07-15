@@ -110,3 +110,16 @@ function khudse() {
         gameStatus = false;
     }
 }
+
+
+document.body.addEventListener('keydown', (event)=>{
+    if(event.key === 'r'){
+        startGame('Rock');
+    }
+    if(event.key === 'p'){
+        startGame('Paper');
+    }
+    if(event.key === 's'){
+        startGame('Scissors');
+    }
+})
