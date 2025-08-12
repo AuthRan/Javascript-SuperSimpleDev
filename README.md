@@ -49,3 +49,5 @@ js-supersimpledev/
 <img width="913" height="409" alt="Screenshot 2025-07-15 124536" src="https://github.com/user-attachments/assets/44f964c8-6731-4cd5-ba4a-8663b6445cc6" />
 
 
+###Note:
+I stoppend working in this repo and as the instructor moved from learning JS to making projects and I created seperate repo for projects name "E-Commerce Website Pure JS"
