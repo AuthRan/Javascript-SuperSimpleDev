@@ -51,3 +51,6 @@ js-supersimpledev/
 
 ###Note:
 I stoppend working in this repo and as the instructor moved from learning JS to making projects and I created seperate repo for projects name "E-Commerce Website Pure JS"
+
+
+---
